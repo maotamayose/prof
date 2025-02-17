@@ -29,12 +29,12 @@
         </video>
     </div>
     <div class="text-container">
-        <h2>趣味</h2>
+        <h2><span>趣味</span></h2>
         <ul>
             <li>スケートボード</li>
             <li>ゲーム（Valorant）</li>
-            <li>漫画（ワンピース、亜人、左利きのエレン）</li>
-            <li>読書（湊かなえ）</li>
+            <li>漫画（ワンピース, 亜人, 左利きのエレン）</li>
+            <li>読書（湊かなえ, お金の向こうに人がいる）</li>
             <li>音楽鑑賞（PEOPLE1 PUNPEE）</li>
         </ul>
     </div>
@@ -48,9 +48,9 @@
         </video>
     </div>
     <div class="text-container">
-        <h2>性格</h2>
-        <p>出来るまで、<br>試行錯誤を重ねて、<br>前向きに取り組むこと。<br>僕のモットーです。</p>
-        <p>初メイクはへたくそでしたが、、<br>努力してトップの動画のように！！</p>
+        <h2><span>性格</span></h2>
+        <p class = "personality-1">出来るまで、<br>試行錯誤を重ねて、<br>前向きに取り組むこと。<br>僕のモットーです。</p>
+        <p class = "personality-2">初メイクはへたくそでしたが、、<br>努力してトップの動画のように！！</p>
     </div>
 </section>
 </body>
