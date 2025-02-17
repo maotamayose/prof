@@ -1,0 +1,99 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.content-block {
+    display: flex;
+    align-items: center; /* 縦方向の中央揃え */
+    justify-content: center; /* 均等配置ではなく中央に寄せる */
+    flex-wrap: wrap;
+    padding: 50px;
+    background: white;
+    gap: 40px; /* 要素間の余白を適切に設定 */
+}
+
+.video-container video {
+    width: 100%;
+    max-width: 500px; /* 動画の最大幅 */
+    height: auto;
+    border-radius: 10px;
+}
+
+.text-container {
+    max-width: 400px;
+    text-align: left;
+    word-wrap: break-word;
+    flex: 1; /* テキストの幅を適切に調整 */
+}
+
+
+/* 趣味リストの修正 */
+.text-container ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+}
+
+.text-container ul li {
+    flex: 1 1 calc(50% - 10px); /* 2列表示に調整 */
+    background: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* content-block reverse の修正 */
+.content-block.reverse {
+    flex-direction: row-reverse;
+    align-items: center; /* 縦方向の中央揃え */
+}
+
+/* スマホ・タブレット対応 */
+@media (max-width: 768px) {
+    .content-block {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-container {
+        max-width: 90%;
+    }
+
+    .video-container video {
+        max-width: 100%;
+    }
+
+    .text-container ul li {
+        flex: 1 1 100%; /* スマホでは1列にする */
+    }
+}
