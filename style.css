@@ -2,108 +2,108 @@
    基本スタイル
    =================================== */
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f8f8;
+    font-family: 'Arial', sans-serif;  /* フォント設定 */
+    margin: 0;  /* ページのマージンを0に */
+    padding: 0;  /* ページのパディングを0に */
+    background-color: #f8f8f8;  /* 背景色設定 */
 }
 
 /* ===================================
-   ヒーローセクション
+   ヒーローセクション（背景動画とテキスト）
    =================================== */
 .hero {
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
+    position: relative;  /* 絶対配置の要素を親要素内で配置 */
+    height: 100vh;  /* ビューポート高さに合わせる */
+    overflow: hidden;  /* 要素がはみ出さないように */
 }
 
 .hero-video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 100%;  /* 幅を100%に設定 */
+    height: 100%;  /* 高さを100%に設定 */
+    object-fit: cover;  /* ビデオが親要素に合わせて切り取られる */
 }
 
 .hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-    font-size: 2rem;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 1rem;
-    border-radius: 10px;
+    position: absolute;  /* テキストを絶対配置 */
+    top: 50%;  /* 縦位置を中央に */
+    left: 50%;  /* 横位置を中央に */
+    transform: translate(-50%, -50%);  /* 完全に中央に配置 */
+    color: white;  /* テキストカラーを白に */
+    text-align: center;  /* テキストを中央揃え */
+    font-size: 2rem;  /* フォントサイズを設定 */
+    background: rgba(0, 0, 0, 0.5);  /* 背景を半透明の黒に */
+    padding: 1rem;  /* パディングを追加 */
+    border-radius: 10px;  /* 角を丸める */
 }
 
 /* ===================================
    動画＋テキストブロック
    =================================== */
 .content-block {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 50px;
-    background: white;
-    gap: 100px;
+    display: flex;  /* フレックスボックスで配置 */
+    align-items: center;  /* アイテムを縦方向に中央揃え */
+    justify-content: center;  /* アイテムを横方向に中央揃え */
+    padding: 50px;  /* パディングを設定 */
+    background: white;  /* 背景色を白に */
+    gap: 100px;  /* アイテム間のスペースを設定 */
 }
 
 .video-container {
-    flex: 1;
-    max-width: 500px
+    flex: 1;  /* コンテナが親要素の空間を均等に占める */
+    max-width: 500px;  /* 最大幅を500pxに制限 */
 }
 
 .video-container video {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    border-radius: 10px;
+    width: 100%;  /* 幅を100%に設定 */
+    max-width: 500px;  /* 最大幅を500pxに制限 */
+    height: auto;  /* 高さを自動で調整 */
+    border-radius: 10px;  /* 角を丸くする */
 }
 
 .text-container {
-    flex: 1;
-    max-width: 450px;
+    flex: 1;  /* テキストコンテナが親要素の空間を均等に占める */
+    max-width: 450px;  /* 最大幅を450pxに制限 */
 }
 
 .text-container p {
-    width: 350px;
-    font-size: 1.1rem;
-    line-height: 1.8;
-    text-align: left;
-    margin-bottom: 20px;
-    background: #f0f0f0;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    width: 350px;  /* パラグラフの幅を350pxに設定 */
+    font-size: 1.1rem;  /* フォントサイズを1.1remに設定 */
+    line-height: 1.8;  /* 行間を設定 */
+    text-align: left;  /* 左揃えに設定 */
+    margin-bottom: 20px;  /* 下部の余白を追加 */
+    background: #f0f0f0;  /* 背景色を薄い灰色に */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);  /* シャドウを追加 */
+    border-radius: 8px;  /* 角を丸くする */
 }
 
 .personality-1 {
-    font-weight: bold;
+    font-weight: bold;  /* フォントを太字に */
 }
 
 .text-container h2 {
-    text-align: left;
+    text-align: left;  /* 見出しを左揃え */
 }
 
 .text-container h2 span {
-    background: linear-gradient(transparent 60%, #16b5dd 60%);
+    background: linear-gradient(transparent 60%, #16b5dd 60%);  /* 見出しにグラデーションを追加 */
 }
 
 .text-container ul {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding: 0;
-    list-style: none;
+    display: flex;  /* フレックスボックスでリストを配置 */
+    flex-direction: column;  /* アイテムを縦並びに */
+    gap: 15px;  /* アイテム間のスペースを15pxに設定 */
+    padding: 0;  /* パディングを0に */
+    list-style: none;  /* デフォルトのリストスタイルを削除 */
 }
 
 .text-container ul li {
-    width: 350px;
-    background: #f0f0f0;
-    padding: 12px;
-    border-radius: 8px;
-    text-align: left;
-    font-weight: bold;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    width: 350px;  /* リストアイテムの幅を350pxに設定 */
+    background: #f0f0f0;  /* 背景色を薄い灰色に */
+    padding: 12px;  /* パディングを12pxに設定 */
+    border-radius: 8px;  /* 角を丸くする */
+    text-align: left;  /* 左揃えに設定 */
+    font-weight: bold;  /* フォントを太字に */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);  /* シャドウを追加 */
 }
 
 /* ===================================
@@ -112,7 +112,7 @@ body {
 @media (max-width: 768px) {
     /* ヒーローセクション以外の動画を非表示に */
     .content-block .video-container video {
-        display: none;
+        display: none;  /* 動画を非表示に */
     }
 
     .hero-text {
@@ -121,19 +121,19 @@ body {
     }
 
     .content-block {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: column;  /* レイアウトを縦並びに変更 */
+        text-align: center;  /* テキストを中央揃え */
     }
 
     .text-container {
-        max-width: 90%;
+        max-width: 90%;  /* 最大幅を90%に設定 */
     }
 
     .video-container {
-        max-width: 100%;
+        max-width: 100%;  /* 最大幅を100%に設定 */
     }
 
     .text-container ul li {
-        width: 100%;
+        width: 100%;  /* リストアイテムの幅を100%に設定 */
     }
 }
