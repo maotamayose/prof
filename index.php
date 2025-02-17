@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>プロフィール</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> <!-- 外部CSSファイルを読み込む -->
 </head>
 <body>
 <!-- ヒーローセクション -->
@@ -17,11 +17,11 @@
     </video>
     <div class="hero-text">
         <h1>ようこそ！</h1>
-        <p>あなたのプロフィールページへ</p>
+        <p>玉代勢真生のプロフィールページへ</p>
     </div>
 </section>
 
-<!-- 動画＋テキストのブロック -->
+<!-- 動画＋テキストのブロック（趣味） -->
 <section class="content-block">
     <div class="video-container">
         <video autoplay loop muted playsinline>
@@ -40,10 +40,12 @@
     </div>
 </section>
 
+<!-- 動画＋テキストのブロック（性格） -->
 <section class="content-block reverse">
     <div class="text-container">
         <h2>性格</h2>
         <p>出来るまで、<br>試行錯誤を重ねて、<br>前向きに取り組むこと。<br>僕のモットーです。</p>
+        <p>初メイクはへたくそでしたが、、<br>努力して上の動画のように！！</p>
     </div>
     <div class="video-container">
         <video autoplay loop muted playsinline>
