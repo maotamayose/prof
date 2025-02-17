@@ -136,4 +136,8 @@ body {
     .text-container ul li {
         width: 100%;  /* リストアイテムの幅を100%に設定 */
     }
+
+    .text-container p{
+        width: 100%
+    }
 }
